@@ -3,7 +3,7 @@ export default function CommonTable({
   columns,
   prevHandler,
   nextHandler,
-  currentPage
+  currentPage,
 }) {
   // console.log(items);
   return (
@@ -22,7 +22,15 @@ export default function CommonTable({
               ))}
           </tr>
         </thead>
-        <tbody>{items}</tbody>
+        <tbody>
+          {items ? (
+            items
+          ) : (
+            <tr>
+              <td>No data</td>
+            </tr>
+          )}
+        </tbody>
       </table>
     </>
   );

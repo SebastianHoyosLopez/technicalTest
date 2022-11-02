@@ -1,15 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CommonTable from "../../components/ui/CommonTable";
 import { v4 as uuidv4 } from "uuid";
 
-const ProductionTable = ({
-  data,
-  columns,
-  nextHandler,
-  prevHandler,
-  currentPage,
-}) => {
-  // console.log(data);
+const ProductionTable = ({ data, columns, nextHandler, prevHandler, currentPage }) => {
+console.log(data)
   const buildItems = (__items) => {
     return (
       __items &&
@@ -35,6 +29,8 @@ const ProductionTable = ({
       ))
     );
   };
+  
+  console.log(buildItems(data))
 
   return (
     <>

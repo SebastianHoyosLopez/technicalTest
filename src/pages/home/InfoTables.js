@@ -21,11 +21,11 @@ const InfoTables = ({ columns, columns2 }) => {
   const handleFile = (data, fileInfo) => {
     setTotalData(data);
     // console.log(data, fileInfo);
-    if(data.length > 0){
-      setCurrentPage(currentPage + 1)
+    if (data.length > 0) {
+      setCurrentPage(currentPage + 1);
     }
     setDataCsv(data.splice(0, ITEMS_PER_PAGE));
-    console.log(dataCsv)
+    console.log(dataCsv);
   };
 
   const nextHandler = () => {

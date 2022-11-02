@@ -36,6 +36,7 @@ const Home = () => {
       <div className="container">
         <InfoTables
           columns2={[
+            "action", 
             "id",
             "wellName",
             "wellAPI",
