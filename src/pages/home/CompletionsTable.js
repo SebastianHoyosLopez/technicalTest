@@ -24,13 +24,13 @@ const CompletionsTable = ({
         x: item.x,
         y: item.y,
         TD: item.td,
-        //   item?.ishorizontal
-        //   item?.reservoir
-        //   item?.faultblock
-        //   item?.compartment
-        //   item?.maxbhp
-        //   item?.long
-        //   item?.lat
+        ishorizontal: item.ishorizontal,
+        reservoir: item.reservoir,
+        faultblock: item.faultblock,
+        compartment: item.compartment,
+        maxbhp: item.maxbhp,
+        long: item.long,
+        lat: item?.lat,
       }))
 
       // <tr key={index}>
@@ -66,7 +66,7 @@ const CompletionsTable = ({
         prevHandler={prevHandler}
         columns={columns}
         currentPage={currentPage}
-        // items={buildItems(data)}
+        itemsCompletions={buildItems(data)}
       />
     </>
   );

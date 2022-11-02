@@ -1,12 +1,13 @@
 export default function CommonTable({
-  itemsCompletions,
+  itemsProduction,
   
   columns,
   prevHandler,
   nextHandler,
   currentPage,
 }) {
-  // console.log(items);
+  console.log(itemsProduction);
+  console.log(columns)
   return (
     <>
       {/* <h2>Page: {items ? currentPage : 0}</h2> */}
@@ -24,9 +25,9 @@ export default function CommonTable({
           </tr>
         </thead>
         <tbody>
-          {itemsCompletions ? (
-            itemsCompletions.length > 0 &&
-            itemsCompletions.map((item) => (
+          {/* {itemsProduction ? (
+            itemsProduction.length > 0 &&
+            itemsProduction.map((item) => (
               
               <tr key={item.id}>
                 <td>
@@ -55,7 +56,7 @@ export default function CommonTable({
             <tr>
               <td>No data</td>
             </tr>
-          )}
+          )} */}
         </tbody>
       </table>
     </>
